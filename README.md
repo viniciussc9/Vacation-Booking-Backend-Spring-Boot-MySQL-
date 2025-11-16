@@ -3,7 +3,7 @@
 Spring Boot back-end for a single-page vacation booking application.  
 The service exposes REST APIs for vacations, excursions, customers, and checkout, backed by a MySQL database and consumed by an Angular front end.
 
----
+
 
 ## Features
 
@@ -25,7 +25,7 @@ The service exposes REST APIs for vacations, excursions, customers, and checkout
 - **Sample data**
   - Programmatic seeding of example customers on startup (without overwriting existing data).
 
----
+
 
 ## Tech Stack
 
@@ -36,42 +36,3 @@ The service exposes REST APIs for vacations, excursions, customers, and checkout
 - **Build:** Maven
 - **Other:** Lombok, Spring Data REST, Bean Validation (Jakarta Validation)
 
----
-
-## Project Structure
-
-
-src/
-  main/
-    java/com/d288/vdasi11/
-      config/
-        RestDataConfig.java        # Exposes entities via Spring Data REST under /api
-      entities/
-        Address.java
-        Cart.java
-        CartItem.java
-        Country.java
-        Customer.java
-        Excursion.java
-        State.java
-        Vacation.java
-      dao/
-        AddressRepository.java
-        CartItemRepository.java
-        CountryRepository.java
-        CustomerRepository.java
-        ExcursionRepository.java
-        StateRepository.java
-        VacationRepository.java
-      services/
-        Purchase.java
-        PurchaseResponse.java
-        CheckoutService.java
-        CheckoutServiceImpl.java
-      controllers/
-        CheckoutController.java    # POST /api/checkout/purchase
-      VacationDemoApplication.java # Spring Boot entry point
-
-  test/
-    java/com/d288/vdasi11/
-      ... (unit tests and repository tests)
