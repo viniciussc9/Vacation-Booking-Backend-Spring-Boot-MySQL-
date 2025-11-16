@@ -40,7 +40,7 @@ The service exposes REST APIs for vacations, excursions, customers, and checkout
 
 ## Project Structure
 
-```text
+
 src/
   main/
     java/com/d288/vdasi11/
